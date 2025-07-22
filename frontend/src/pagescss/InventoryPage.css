@@ -1,0 +1,116 @@
+/* InventoryPage.css */
+
+.inventory-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.inventory-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.inventory-item {
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inventory-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.inventory-item h3 {
+  color: #2c3e50;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.inventory-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+.inventory-item p:nth-child(2) {
+  color: #27ae60; /* Green for quantity */
+}
+
+.inventory-item p:nth-child(3) {
+  color: #e67e22; /* Orange for price */
+}
+
+.inventory-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-button,
+.update-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #ff1a1a;
+}
+
+.update-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.update-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .inventory-container {
+    width: 90%;
+  }
+
+  .inventory-item {
+    padding: 12px;
+  }
+
+  .inventory-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .delete-button,
+  .update-button {
+    width: 100%;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}

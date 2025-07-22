@@ -1,0 +1,22 @@
+/* PDFViewer.css */
+
+
+.pdf-container {
+  
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.pdf-viewer {
+  border: 1px solid #ccc;
+  height: 680px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pdf-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+

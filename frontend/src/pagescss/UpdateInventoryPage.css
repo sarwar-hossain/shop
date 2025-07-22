@@ -1,0 +1,88 @@
+.update-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .update-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .update-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .update-container label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .update-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .update-container input:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  
+  .update-container button {
+    padding: 10px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .update-container button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .update-container button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .update-container button[type="button"] {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .update-container button[type="button"]:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .update-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .update-container h2 {
+      font-size: 20px;
+    }
+  
+    .update-container input {
+      font-size: 14px;
+    }
+  
+    .update-container button {
+      font-size: 14px;
+    }
+  }
+  
